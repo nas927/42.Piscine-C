@@ -19,8 +19,9 @@ static void	ft_print_hexa(char np)
 	hex = "0123456789abcdef";
 	if (np > 16)
 	{
-		ft_print_hexa(np / 10);
-		ft_print_hexa(np % 10);
+        //Base 16 trou de balle 
+		ft_print_hexa(np / 16);
+		ft_print_hexa(np % 16);
 	}
 	else
 		ft_putchar(hex[np]);
